@@ -24,7 +24,7 @@ const LOG_DRAW_TIMEOUT = 10000;
 const DEPRECATED_PICKING_UNIFORMS = ['renderPickingBuffer', 'pickingEnabled'];
 
 // Model abstract O3D Class
-export default class Model extends Node {
+export default class MeshModel extends Node {
   constructor(gl, props = {}) {
     super(props);
     assert(isWebGL(gl));

@@ -67,10 +67,14 @@ export {default as UniformBufferLayout} from './webgl/uniform-buffer-layout';
 export {default as _Accessor} from './webgl/accessor';
 export {clearBuffer as _clearBuffer} from './webgl/clear';
 
-// CORE
-export {default as Object3D} from './core/object-3d';
+// CORE - Scenegraph
+export {default as Node} from './core/node';
 export {default as Group} from './core/group';
+export {default as Mesh} from './core/mesh';
+export {default as Camera} from './core/camera';
 export {default as Model} from './core/model';
+
+// CORE
 export {default as AnimationLoop} from './core/animation-loop';
 export {default as pickModels} from './core/pick-models';
 export {
@@ -152,6 +156,10 @@ export {default as picking} from './shadertools/src/modules/picking/picking';
 export {default as diffuse} from './shadertools/src/modules/diffuse/diffuse';
 
 export {default as pbr} from './shadertools/src/modules/pbr/pbr';
+
+// DEPRECATED EXPORTS IN v7.0
+
+export {default as Object3D} from './core/node';
 
 // DEPRECATED EXPORTS IN v6.0
 
